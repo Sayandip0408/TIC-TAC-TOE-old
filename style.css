@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(5, 22, 78);
+}
+
+.navbar {
+    text-align: center;
+    height: 60px;
+    background-color: #00051a;
+    position: relative;
+}
+
+.navbar h1 {
+    color: gold;
+    font-size: 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar button {
+    height: 60px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: rgb(250, 250, 157);
+    font-weight: 100;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar button:hover {
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+#about {
+    position: absolute;
+    right: 10px;
+}
+
+#home {
+    position: absolute;
+    right: 110px;
+}
+
+
+
+.welcome {
+    /* background-color: rgb(0, 136, 255); */
+    /* background-color: #0d0a35; */
+    height: 600px;
+    width: 100vw;
+    /* border: 2px solid red; */
+    margin: 50px 0;
+    /* border-radius: 40px; */
+    padding: 50px 0px;
+    position: relative;
+    /* box-shadow: 2px 2px 2px 2px white; */
+}
+
+.welcome h2 {
+    font-family: 'Shizuru', cursive;
+    color: antiquewhite;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-family: 'Shizuru', cursive;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 60px;
+}
+
+.welcome button {
+    width: 20vw;
+    height: 50px;
+    margin: 30px 40vw;
+    border: 1px solid yellow;
+    border-radius: 35px;
+    background-color: rgb(5, 22, 78);
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.welcome button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid red;
+    color: yellow;
+}
+
+.welcome p {
+    font-family: 'Gideon Roman', cursive;
+    color: yellow;
+    width: 40vw;
+    margin: 0 30vw;
+}
+
+.welcome p strong {
+    color: red;
+}
+
+#p1 {
+    position: absolute;
+    bottom: 50px;
+}
+
+.player-names {
+    display: none;
+    height: 450px;
+    width: 40vw;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 50px 30vw;
+    border-radius: 40px;
+    padding: 50px 60px;
+}
+
+.player-names h1 {
+    font-family: 'Special Elite', cursive;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 30px;
+}
+
+.player-names label {
+    font-family: 'Special Elite', cursive;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.player-names input {
+    font-size: 15px;
+    width: 20vw;
+    height: 30px;
+    border: 1px solid antiquewhite;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.player-names input:focus {
+    outline: none;
+}
+
+.player-names button {
+    font-family: 'Orbitron', sans-serif;
+    width: 33vw;
+    height: 50px;
+    margin-top: 90px;
+    border: 1px solid yellow;
+    border-radius: 35px;
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+}
+
+.player-names button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid red;
+    color: yellow;
+}
+
+.main-frame-game {
+    display: none;
+    /* background-color: aliceblue; */
+    /* border: 1px solid white; */
+    height: 800px;
+}
+
+.main-frame-game button {
+    height: 50px;
+    width: 100px;
+    margin: 10px 47vw;
+    border: 1px solid aqua;
+    border-radius: 10px;
+    color: red;
+    font-size: 15px;
+    background-color: rgb(5, 22, 78);
+}
+
+.main-frame-game button:hover {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+#rematch{
+    display: none;
+}
+
+.main-frame-game h1 {
+    margin-top: 50px;
+    font-family: 'Source Serif 4', sans-serif;
+    text-align: center;
+    color: yellow;
+}
+
+.main-frame-game h3 {
+    font-family: 'Source Serif 4', sans-serif;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.main-frame-game h4{
+    /* margin-top: 50px; */
+    font-family: 'Source Serif 4', sans-serif;
+    text-align: center;
+    color: yellow;
+}
+
+.game-layout {
+    height: 600px;
+    width: 40vw;
+    border: 1px solid red;
+    margin: 50px 30vw;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.game-layout .box {
+    position: relative;
+    width: 13.2vw;
+    height: 198px;
+    border: 1px solid black;
+    border-radius: 10px;
+    float: left;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.game-layout .box:hover {
+    background-color: rgb(230, 217, 201);
+}
+
+#game_layout .cross {
+    position: absolute;
+    left: 55px !important;
+    font-size: 150px;
+    color: black;
+    display: none;
+}
+
+#game_layout .circle {
+    position: absolute;
+    left: 35px !important;
+    font-size: 150px;
+    color: black;
+    display: none;
+}
+
+.footer {
+    margin-top: 120px;
+    height: 270px;
+    background-color: black;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+
+.footer-links {
+    height: 165px;
+    /* border: 1px solid white; */
+}
+
+.footer-links .col {
+    float: left;
+    height: 165px;
+    width: 33.28vw;
+    /* border: 1px solid white; */
+}
+
+.footer-links h3 {
+    color: rgb(192, 189, 189);
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px solid grey;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-links .col a{
+    display: inline-block;
+    padding: 10px 5vw;
+    width: 100%;
+    font-size: 15px;
+    color: grey;
+    font-weight: 100;
+    text-decoration: none;
+    font-family: 'Gideon Roman', cursive;
+}
+.footer .col a:hover{
+    background-color: rgb(5, 22, 78);
+    border-radius: 30px;
+}
+.social{
+    clear: both;
+    height: 100px;
+    border-top: 1px solid grey;
+    text-align: center;
+    background-color: black;
+}
+.social button{
+    width: 4vw;
+    height: 4vw;
+    font-size: 40px;
+    margin: 15px 0;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#btn1{
+    cursor: pointer;
+    color: #1877f2;
+}
+#btn1:hover{
+    color: #0a63d8;
+    cursor: pointer;
+}
+#btn2{
+    background: linear-gradient(to right,orange, purple);
+    color: white;
+    cursor: pointer;
+}
+#btn2:hover{
+    background: linear-gradient(to right,rgb(223, 145, 0), rgb(111, 0, 111));
+    cursor: pointer;
+}
+
+#btn3{
+    color: #5da9dd;
+    cursor: pointer;
+}
+
+#btn3:hover{
+    cursor: pointer;
+    color: #3797d6;
+}
+
+
+.container{
+    background-color: gold;
+    padding: 50px 100px;
+}
+.definition h1{
+    color: #00051a;
+    font-size: 45px;
+}
+.definition p{
+    color: #00051a;
+    font-size: 20px;
+}
+
+.developer{
+    padding: 50px 0
+}
+
+.developer h1{
+    color: #00051a;
+    font-size: 45px;
+}
+
+.details h1{
+    color: gold;
+}
+
+.contact{
+    background-color: #00051a;
+    /* border: 1px solid rgb(205, 64, 113); */
+    border-radius: 10px;
+    height: 450px;
+    padding: 10px;
+}
+
+.image{
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    height: 300;
+    width: 42%;
+    float: left;
+}
+.image img{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.details{
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    height: 300;
+    width: 58%;
+    float: left;
+    padding: 50px;
+}
+
+.details h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.details h3{
+    color: antiquewhite;
+    text-transform: capitalize;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#mail{
+    font-size: 30px;
+    color: white;
+}
+.details a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}

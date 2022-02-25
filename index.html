@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/media.css">
+    <script src="https://kit.fontawesome.com/45e0f9f93b.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 onclick="window.location.href = '/index.html';">TIC-TAC-TOE</h1>
+        <button id="about" onclick="window.location.href = '/about.html';">About</button>
+        <button id="home" onclick="window.location.href = '/index.html';">Home</button>
+    </div>
+
+    <div class="welcome" id="welcome">
+        <h2>Hello & Welcome</h2>
+        <h1>TIC-TAC-TOE</h1>
+        <button id="new_game" onclick="name_function()">Start New Game</button>
+        <br>
+        <button id="win_list" onclick="alert_function()">Win History</button>
+        <p id="p1">* * Click on <strong>Start New Game</strong> button to play game <br> * * Click on <strong>Win
+                History</strong> button to see previous winning history</p>
+    </div>
+
+    <div class="player-names" id="player_names">
+        <h1>** Enter Player Names **</h1>
+        <label for="player1">Player1 Name</label>
+        <input type="text" id="player1" required autofocus>
+        <br>
+        <label for="player2">Player2 Name</label>
+        <input type="text" id="player2" required>
+        <button id="play" onclick="game_function()" type="submit">Play</button>
+    </div>
+
+    <div class="main-frame-game" id="main_frame">
+        <h1 id="winner"></h1>
+        <h4 id="p1_value"></h4>
+        <h4 id="p2_value"></h4>
+        <h3 id="p1_turn"></h3>
+        <h3 id="p2_turn"></h3>
+
+        <div class="game-layout" id="game_layout">
+            <div id="box1" class="box" onclick="input_function1()">
+                <div id="cross1" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle1" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box2" class="box" onclick="input_function2()">
+                <div id="cross2" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle2" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box3" class="box" onclick="input_function3()">
+                <div id="cross3" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle3" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box4" class="box" onclick="input_function4()">
+                <div id="cross4" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle4" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box5" class="box" onclick="input_function5()">
+                <div id="cross5" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle5" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box6" class="box" onclick="input_function6()">
+                <div id="cross6" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle6" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box7" class="box" onclick="input_function7()">
+                <div id="cross7" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle7" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box8" class="box" onclick="input_function8()">
+                <div id="cross8" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle8" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+            <div id="box9" class="box" onclick="input_function9()">
+                <div id="cross9" class="cross"><i class="fas fa-times"></i></div>
+                <div id="circle9" class="circle"><i class="far fa-circle"></i></div>
+            </div>
+        </div>
+        <button id="quit" onclick="window.location.href='/index.html';">Quit Game</button>
+        <button id="rematch" onclick="rematch_function()">Rematch</button>
+    </div>
+    <div class="footer">
+        <div class="footer-links">
+            <div class="col" id="col1">
+                <h3>About Game</h3>
+                <a href="/about.html">Tic Tac Toe - using HTML CSS JS</a>
+            </div>
+            <div class="col" id="col2">
+                <h3>Other Projects</h3>
+                <a href="https://github.com/Sayandip0408/Railway-Reservation-System.git">Railway-Reservation-System</a>
+                <a href="https://github.com/Sayandip0408/Loan-Prediction-System.git">Loan-Prediction-System</a>
+                <a href="https://github.com/Sayandip0408/TIC-TAC-TOE-USING-C.git">Tic Tac Toe Game in C for Two
+                    Users.</a>
+            </div>
+            <div class="col" id="col3">
+                <h3 style="color: transparent;">About</h3>
+                <a href="https://github.com/SoumenAtta/VRPPC.git">Vehicle Routing Problem</a>
+            </div>
+        </div>
+        <div class="social">
+            <button id="btn1" onclick="window.location.href = 'https://www.facebook.com/sayandip.adhikary.96/';"><i
+                    class="fab fa-facebook"></i></button>
+            <button id="btn2" onclick="window.location.href = 'https://www.instagram.com/mr_adhikary794/';"><i
+                    class="fab fa-instagram"></i></button>
+            <button id="btn3" onclick="window.location.href = 'https://twitter.com/SayandipAdhika1';"><i
+                    class="fab fa-twitter"></i></button>
+        </div>
+    </div>
+</body>
+
+</html>
